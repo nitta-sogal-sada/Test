@@ -1,84 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE NARSN CONCLAVE - New Member Application</title>
-    <link rel="stylesheet" href="second.css">
+  <meta charset="UTF-8" />
+  <title>Join THE NARSN CONCLAVE</title>
+  <link rel="stylesheet" href="second.css" />
 </head>
 <body>
-    <header>
-        <h1>THE NARSN CONCLAVE</h1>
-        <p>Join our ranks and become a part of something greater.</p>
-    </header>
 
-    <main>
-        <section class="application-form">
-            <h2>New Member Application</h2>
-            <form id="memberApplicationForm">
-                <div class="form-group">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                    <div class="error-message" id="fullNameError"></div>
-                </div>
+  <form id="joinForm">
+    <h2>Join THE NARSN CONCLAVE</h2>
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="text" name="institution" placeholder="Institution / School" required />
+    <input type="text" name="interest" placeholder="Area of Interest" required />
+    <button type="submit">Add Submission</button>
+  </form>
 
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="error-message" id="emailError"></div>
-                </div>
+  <button id="downloadBtn">Download All Submissions</button>
 
-                <div class="form-group">
-                    <label for="phoneNumber">Phone Number:</label>
-                    <input type="tel" id="phoneNumber" name="phoneNumber">
-                    <div class="error-message" id="phoneNumberError"></div>
-                </div>
-
-                <div class="form-group">
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob" required>
-                    <div class="error-message" id="dobError"></div>
-                </div>
-
-                <div class="form-group">
-                    <label for="occupation">Occupation/Field of Study:</label>
-                    <input type="text" id="occupation" name="occupation">
-                </div>
-
-                <div class="form-group">
-                    <label for="whyJoin">Why do you want to join THE NARSN CONCLAVE?</label>
-                    <textarea id="whyJoin" name="whyJoin" rows="5" required></textarea>
-                    <div class="error-message" id="whyJoinError"></div>
-                </div>
-
-                <div class="form-group">
-                    <label for="hearAbout">How did you hear about us?</label>
-                    <select id="hearAbout" name="hearAbout">
-                        <option value="">Select an option</option>
-                        <option value="friend">Friend/Family</option>
-                        <option value="socialMedia">Social Media</option>
-                        <option value="website">Website/Online Search</option>
-                        <option value="event">Event</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
-                    <label for="agreeTerms">I agree to the <a href="#terms-and-conditions" target="_blank">Terms and Conditions</a></label>
-                    <div class="error-message" id="agreeTermsError"></div>
-                </div>
-
-                <button type="submit">Submit Application</button>
-            </form>
-            <div id="formMessage" class="form-message"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 THE NARSN CONCLAVE. All rights reserved.</p>
-    </footer>
-
-    <script src="third.js"></script>
+  <script src="third.js"></script>
 </body>
 </html>
